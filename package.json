@@ -9,17 +9,29 @@
   "categories": [
     "Programming Languages"
   ],
+  "repository": {
+    "url": "https://github.com/e6nlaq/aqua-syntax.git"
+  },
   "contributes": {
-    "languages": [{
-      "id": "aqua",
-      "aliases": ["Aqua", "aqua"],
-      "extensions": [".aqua"],
-      "configuration": "./language-configuration.json"
-    }],
-    "grammars": [{
-      "language": "aqua",
-      "scopeName": "source.aqua",
-      "path": "./syntaxes/aqua.tmLanguage.json"
-    }]
+    "languages": [
+      {
+        "id": "aqua",
+        "aliases": [
+          "Aqua",
+          "aqua"
+        ],
+        "extensions": [
+          ".aqua"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "aqua",
+        "scopeName": "source.aqua",
+        "path": "./syntaxes/aqua.tmLanguage.json"
+      }
+    ]
   }
 }
