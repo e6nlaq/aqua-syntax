@@ -1,0 +1,62 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Aqua",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#comment"
+		},
+		{
+			"include": "#constant"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [
+				{
+					"name": "keyword.control.aqua",
+					"match": "\\b(if|while|for|end|until)\\b"
+				}
+			]
+		},
+		"strings": {
+			"name": "string.quoted.double.aqua",
+			"begin": "\"|'",
+			"end": "\"|'",
+			"patterns": [
+				{
+					"name": "constant.character.escape.aqua",
+					"match": "\\\\."
+				}
+			]
+		},
+		"comment": {
+			"patterns": [
+				{
+					"name": "comment.line.number-sign",
+					"begin": "#",
+					"end": "\n"
+				},
+				{
+					"name": "comment.block",
+					"begin": "\"\"\"",
+					"end": "\"\"\""
+				}
+			]
+		},
+		"constant": {
+			"patterns": [
+				{
+					"name": "constant.numeric",
+					"match": "[0-9]+"
+				}
+			]
+		}
+	},
+	"scopeName": "source.aqua"
+}

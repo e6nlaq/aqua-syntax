@@ -1,0 +1,25 @@
+{
+  "name": "aqua-syntax",
+  "displayName": "Aqua Syntax",
+  "description": "Aqua's VSCode Syntex Extension",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.78.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "aqua",
+      "aliases": ["Aqua", "aqua"],
+      "extensions": [".aqua"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "aqua",
+      "scopeName": "source.aqua",
+      "path": "./syntaxes/aqua.tmLanguage.json"
+    }]
+  }
+}
